@@ -1,0 +1,15 @@
+{
+  "name": "lynk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LYNK — Figma → Roblox Studio UI import bridge",
+  "workspaces": [
+    "figma"
+  ],
+  "scripts": {
+    "build:figma": "npm run build --workspace figma",
+    "watch:figma": "npm run watch --workspace figma",
+    "typecheck:figma": "npm run typecheck --workspace figma",
+    "build:plugin": "rojo build studio/LYNK.plugin.project.json -o \"%LOCALAPPDATA%/Roblox/Plugins/LYNK.rbxm\""
+  }
+}
